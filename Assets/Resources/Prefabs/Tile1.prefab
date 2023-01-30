@@ -302,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2970394510976689486}
   m_Layer: 6
-  m_Name: Tile
+  m_Name: Tile1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
