@@ -22,9 +22,12 @@ public class MazeGenerator : MonoBehaviour
         startTile = Resources.Load<GameObject>("Prefabs/StartTile");
         goalTile = Resources.Load<GameObject>("Prefabs/GoalTile");
 
-        tileArray = new GameObject[2];
+        tileArray = new GameObject[5];
         tileArray[0] = Resources.Load<GameObject>("Prefabs/Tile1");
         tileArray[1] = Resources.Load<GameObject>("Prefabs/Tile2");
+        tileArray[2] = Resources.Load<GameObject>("Prefabs/Tile3");
+        tileArray[3] = Resources.Load<GameObject>("Prefabs/Tile4");
+        tileArray[4] = Resources.Load<GameObject>("Prefabs/Tile5");
 
         playerPrefab = Resources.Load<GameObject>("Prefabs/Player");
 
@@ -35,9 +38,18 @@ public class MazeGenerator : MonoBehaviour
     {
         tileParent = GameObject.Find("[TILES]").transform;
         BuildTileList();
-
-
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            DestroyTiles();
+            DestroyPlayer();
+            BuildTileList();
+        }
+    }
+
 
     private void BuildTileList()
     {
@@ -45,7 +57,7 @@ public class MazeGenerator : MonoBehaviour
         {
             for (var col = 0; col < width; col++)
             {
-                var tempTile = Instantiate(tileArray[Random.Range(0,2)], new Vector3(col * 5.0f, 0.0f, row * 5.0f), 
+                var tempTile = Instantiate(tileArray[Random.Range(0,5)], new Vector3(col * 5.0f, 0.0f, row * 5.0f), 
                                 Quaternion.Euler(0.0f, Random.Range(1,4) * 90.0f, 0.0f), tileParent);
                 tileList.Add(tempTile);
             }
@@ -66,8 +78,22 @@ public class MazeGenerator : MonoBehaviour
         tileList[goalTileIndex] = Instantiate(goalTile, goalTilePosition, Quaternion.identity, tileParent);
     }
 
+    private void DestroyTiles()
+    {
+        foreach (var tile in tileList)
+        {
+            Destroy(tile);
+        }
+        tileList.Clear();
+    }
+
     private void AddPlayer(Vector3 position)
     {
         player = Instantiate(playerPrefab, new Vector3(position.x, 10.0f ,position.y), Quaternion.identity);
+    }
+
+    private void DestroyPlayer()
+    {
+        Destroy(player);
     }
 }

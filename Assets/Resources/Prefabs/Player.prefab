@@ -29,13 +29,13 @@ Transform:
   m_GameObject: {fileID: 9222343113374989410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.236, y: 2.305, z: -0.913}
-  m_LocalScale: {x: 0.71716, y: 0.71716, z: 0.71716}
+  m_LocalScale: {x: 0.71716, y: 0.51, z: 0.71716}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9222343115160408902}
   - {fileID: 9222343113416073941}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9222343113374989412
 MonoBehaviour:
@@ -72,7 +72,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.48
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -106,9 +106,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2.0011888
+  m_Height: 1.5
   m_Direction: 1
-  m_Center: {x: 0, y: -0.0007033348, z: 0}
+  m_Center: {x: 0, y: 0.13211825, z: 0}
 --- !u!1 &9222343113416073936
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9222343115160408903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.677, z: 0}
+  m_LocalPosition: {x: 0, y: -0.319, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

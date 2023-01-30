@@ -277,13 +277,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4327b8ccc10fb0b45a2697e1e26afe57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileParent: {fileID: 0}
-  width: 5
-  depth: 5
+  tileParent: {fileID: 762098477}
+  width: 100
+  depth: 100
   startTile: {fileID: 0}
   goalTile: {fileID: 0}
   tileArray: []
   tileList: []
+  playerPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!4 &1063594994
 Transform:
   m_ObjectHideFlags: 0

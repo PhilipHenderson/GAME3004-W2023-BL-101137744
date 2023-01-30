@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 598363091949075748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ArchWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4570816358875217425}
   - component: {fileID: 4490504138248179817}
   - component: {fileID: 2276721789817702068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Archway model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 1950560056201391619}
   - component: {fileID: 8321774559189991791}
   - component: {fileID: 6972371624820423335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GoalTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5012377592512563889}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GoalTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
